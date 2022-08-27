@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 
 st.title('Charge&Guess')
@@ -87,11 +88,12 @@ features ={'age': age, 'sex': sex ,
 features_df  = pd.DataFrame([features])
 
 
-ok = st.button("Calculate charges")
+ok = st.button("Tabulate")
 
 if ok:
-    #st.write([age,sex,bmi,children,smoker,region])
+    st.write([age,sex,bmi,children,smoker,region])
     st.write(features_df)
+    st.write([[age,sex,bmi,children,smoker,region]])
     #charges = reg_model.predict(data_pre)
     #charges = model_file.predict(features_df)
     #salary = predict_model(model, data=features_df)
