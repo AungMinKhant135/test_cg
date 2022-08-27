@@ -16,7 +16,7 @@ ok = st.button("Calculate Salary")
 #model = load_model('CV_RF_Regression')
 #model = models.load_model('CV_RF_Regression.h5')
 #model =load_model('CV_RF_Regression.h5')
-model =load_model('CV_RF_Regression.pkl')
+model =load_model('CV_RF_Regression')
 #model = load_model('cnn.h5')
 
 
