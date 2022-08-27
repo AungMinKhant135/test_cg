@@ -13,11 +13,17 @@ st.sidebar.title("Operations on the Dataset")
 
 #st.subheader("Checkbox")
 w1 = st.sidebar.checkbox("Sample data ", False)
+w2 = st.sidebar.checkbox('BMI calculator', False)
 
 if w1:
     st.write('Sample data')
     image = Image.open('data_charges.png')
     st.image(image, 'Sample data')
+    
+if w2:
+    st.write('BMI Calculator')
+    img = Image.open('qrcode_www.calculator.net.png')
+    st.image(img, 'BMI Calculator')
 
 col1, col2, col3 = st.columns(3)
 
