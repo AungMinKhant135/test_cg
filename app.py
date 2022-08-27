@@ -1,9 +1,9 @@
-import streamlit as st
-#from pycaret.regression import *
-import pandas as pd
-#import keras
+import os
+import numpy as np
+import cv2
 from tensorflow.keras.models import load_model
-#from keras.models import load_model
+import streamlit as st
+from streamlit_drawable_canvas import st_canvas
 
 
 st.title('Charge&Guess')
@@ -16,6 +16,8 @@ ok = st.button("Calculate Salary")
 #model = load_model('CV_RF_Regression')
 #model = models.load_model('CV_RF_Regression.h5')
 model =load_model('CV_RF_Regression.h5')
+#model = load_model('cnn.h5')
+
 
 age = 20
 sex = 0
