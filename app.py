@@ -14,8 +14,8 @@ Please use input data
 ok = st.button("Calculate Salary")
 
 #model = load_model('CV_RF_Regression')
-model = models.load_model('CV_RF_Regression.h5')
-#model =load_model('CV_RF_Regression.h5')
+#model = models.load_model('CV_RF_Regression.h5')
+model =load_model('CV_RF_Regression.h5')
 
 age = 20
 sex = 0
