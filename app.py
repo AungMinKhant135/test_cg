@@ -13,6 +13,10 @@ st.sidebar.title("Operations on the Dataset")
 #st.subheader("Checkbox")
 w1 = st.sidebar.checkbox("Sample data ", False)
 
+if w1:
+    st.write('Sample data')
+    image = Image.open('data_charges.png')
+    st.image(image, 'Sample data')
 
 col1, col2, col3 = st.columns(3)
 
@@ -83,7 +87,7 @@ features ={'age': age, 'sex': sex ,
 features_df  = pd.DataFrame([features])
 
 
-ok = st.button("Calculate Salary")
+ok = st.button("Calculate charges")
 
 if ok:
     #st.write([age,sex,bmi,children,smoker,region])
