@@ -1,5 +1,5 @@
 import streamlit as st
-from pycaret.regression import *
+#from pycaret.regression import *
 import pandas as pd
 
 st.title('Charge&Guess')
