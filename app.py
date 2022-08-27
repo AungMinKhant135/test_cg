@@ -96,4 +96,4 @@ if ok:
     #charges = model_file.predict(features_df)
     #salary = predict_model(model, data=features_df)
     #charges = predict_model(model, data=features_df)
-    st.write(charges)
+    #st.write(charges)
